@@ -1,6 +1,4 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* General */
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff; /* white */
@@ -31,9 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* Preloader */
 #preloader {
   position: fixed;
   top: 0;
@@ -67,9 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/* Back to top button */
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -100,9 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Header */
 #header {
   background: #000000; /* black */
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
@@ -134,9 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
+/* Header Social Links */
 .header-social-links {
   padding-right: 15px;
 }
@@ -154,12 +144,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #d3d3d3; /* light grey */
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Navigation Menu */
+/* Desktop Navigation */
 .navbar {
   padding: 0;
 }
@@ -232,9 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #d3d3d3; /* light grey */
 }
 
-/**
-* Mobile Navigation 
-*/
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #ffffff; /* white */
   font-size: 28px;
@@ -342,9 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* Hero Section */
 #hero {
   width: 100%;
   height: 100vh;
@@ -373,10 +355,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff; /* white */
 }
 
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 48px; /* Adjusted font size for mobile */
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 32px; /* Adjusted font size for small screens */
+    line-height: 40px;
+  }
+}
+
 #hero h2 {
-  color: #ffffff; /* white */
-  margin: 20px 0 10px 0; /* Increased margin */
-  font-weight: 300;
+  color: #d3d3d3; /* light grey */
   font-size: 32px; /* Larger font size */
   line-height: 40px;
 }
@@ -400,8 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px; /* Larger border radius */
   color: #ffffff; /* white */
   background: #000000; /* black */
-  border-color: #d3d3d3;
-  /* border: none; */
+  border-color: #d3d3d3; /* light grey */
   transition: background 0.3s, color 0.3s;
 }
 
@@ -436,9 +429,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff; /* white */
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Media queries for landing-buttons */
+@media (max-width: 768px) {
+  .landing-buttons button {
+    padding: 12px 24px; /* Adjust padding for mobile */
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-buttons button {
+    padding: 10px 20px; /* Adjust padding for small screens */
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+}
+
+/* Footer */
 footer {
   background: #000000; /* black */
   padding: 30px 0;
